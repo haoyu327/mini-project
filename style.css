@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(
+    to bottom,
+    rgb(20, 19, 26) 0%,
+    rgb(64, 75, 83) 35%
+  );
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+/* span {
+  font-size: 40px;
+  text-align: center;
+  animation: neon 0.08s ease-in-out infinite alternate;
+  letter-spacing: 2px;
+} */
+
+h1 {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  text-align: center;
+  animation: neon 0.08s ease-in-out infinite alternate;
+  letter-spacing: 2px;
+  color: rgb(246, 255, 217);
+}
+
+h5 {
+  font-size: 24px;
+}
+
+.sec1 {
+}
+
+.typeblink {
+  margin: 50px 0 0 0;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+
+.sec2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardall {
+  height: 400px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 18px 0 rgb(26, 228, 255);
+  margin: 0 50px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.cardall:hover {
+  transform: scale(1.1);
+}
+
+img {
+  background-size: cover;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+.card-img-top {
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-body {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.card-title {
+  text-align: center;
+  color: #fff;
+}
