@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylef.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Train+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylef.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Train+One&display=swap"
+      rel="stylesheet"
+    />
     <title>fortune wheel</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <h1>What to eat Today ?</h1>
-    <img class="img1" src="/images/wheel holder.png" alt="">
-    <img class="img2" src="/images/fortune wheel.png" alt="">
-    <img class="img3" src="/images/wheel pointer.png" alt="">
+      <h1>What to eat Today ?</h1>
+      <img class="holder" src="/images/wheel holder.png" alt="" />
+      <img class="wheel" src="/images/fortune wheel.png" alt="" />
+      <img class="pointer" src="/images/wheel pointer.png" alt="" />
     </div>
     <div class="sec">
-      <button class="btn">start</button>
+      <button class="btn start">start</button>
     </div>
 
-</body>
+    <script>
+      // fortune wheel
+
+      const wheel = document.querySelector('.wheel')
+      const startButton = document.querySelector('.start')
+      let deg = 0
+
+      startButton.addEventListener('click', () => {
+        startButton.style.pointerEvents = 'none'
+        deg = Math.floor(5000 + Math.random() * 5000)
+        wheel.style.transition = 'all 10s ease-out'
+        wheel.style.transform = `rotate(${deg}deg)`
+        wheel.classList.add('blur')
+      })
+
+      wheel.addEventListener('transitionend', () => {
+        startButton.style.pointerEvents = 'auto'
+        wheel.style.transition = 'none'
+        const actualDeg = deg % 360
+        wheel.style.transform = `rotate(${actualDeg}deg)`
+        wheel.classList.remove('blur')
+      })
+    </script>
+  </body>
 </html>

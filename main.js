@@ -36,6 +36,9 @@ function rollDice() {
     document.querySelector("h1").innerHTML = "Tie";
   }
 
+  
+
 }
+
 
 
