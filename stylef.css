@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: #fff;
+    font-family: 'Train One', cursive;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    margin: 50px 0 100px 0;
+    font-size: 3.5rem;
+}
+
+.img1{
+    position: absolute;
+}
+.img2{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.img3{
+    position: relative;
+    right: 185px;
+    bottom: 320px;
+
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+
+.btn{
+    z-index: 2;
+    display:inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.1s ease-in;
+    border: 1px solid #fff;
+}
+
+.btn:hover{
+    background-color: #2e229b;
+    color: #fff;
+}
