@@ -8,6 +8,7 @@ body {
 
 .container {
   text-align: center;
+  width: 100%;
 }
 
 .container h1 {
@@ -68,4 +69,26 @@ body {
   100% {
     filter: blur(0px);
   }
+}
+
+@media screen and (max-width: 768px) {
+  .container h1 {
+    margin: 50px auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .holder {
+    position: absolute;
+  }
+  .wheel {
+    position: relative;
+
+  }
+  .pointer {
+    position: relative;
+    right: 185px;
+    bottom: 300px;
+  }
+  .sec {
+  top: 150px;
 }
