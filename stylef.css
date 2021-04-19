@@ -79,10 +79,10 @@ body {
   }
   .holder {
     position: absolute;
+    left: 10px;
   }
   .wheel {
     position: relative;
-
   }
   .pointer {
     position: relative;
