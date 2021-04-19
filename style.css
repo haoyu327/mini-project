@@ -38,9 +38,6 @@ h5 {
   font-size: 24px;
 }
 
-.sec1 {
-}
-
 .typeblink {
   margin: 50px 0 0 0;
 }
@@ -105,4 +102,21 @@ img:hover {
 .card-title {
   text-align: center;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    position: absolute;
+    top: 0;
+  }
+  .sec1 {
+    display: block;
+  }
+  .sec2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardall {
+    margin: 20px 20px;
+  }
 }
