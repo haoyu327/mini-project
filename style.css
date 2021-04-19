@@ -76,6 +76,7 @@ h5 {
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  width: 20rem;
 }
 
 .cardall:hover {
@@ -105,18 +106,28 @@ img:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    height: 300vh;
+  }
+  .max-width {
+    width: 100%;
+    max-width: 400px;
+  }
   h1 {
-    position: absolute;
-    top: 0;
-  }
-  .sec1 {
     display: block;
+    position: absolute;
   }
+
   .sec2 {
     display: flex;
+    position: relative;
+    top: 1300px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .cardall {
     margin: 20px 20px;
+    width: 300px;
   }
 }
